@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --btn-color: #67681C;
+    --p-color: rgba(0, 0, 0, 0.55);
+    --font: "Poppins", sans-serif;
+    --font-produtos: "Inria Serif", serif
+}
+
+.maximaLargura{
+    margin: 0 1.5rem;
+}
+
+body{
+    font-family: var(--font);
+}
+
+/* Nav Bar */
+.navContainer{
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.logoContainer{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    gap: .3rem;
+
+    img{
+        width: 1.75rem;
+        aspect-ratio: 1;
+    }
+
+    .logoName{
+        font-size: 1rem ;
+    }
+}
+
+.hamburguerMenu{
+    background-color: white;
+    border: none;
+    width: 1.75rem;
+    font-weight: 600;
+}
+
+.hamburguerMenu[aria-expanded = "true"] .icon::before{
+    display: inline-block;
+    color: black;
+    content: "\2715";
+}
+
+.hamburguerMenu[aria-expanded = "false"] .icon::before{
+    display: inline-block;
+    content: "\2630";
+    color: black;
+}
+
+/* List sections */
+
+.navBarSecoes{
+    text-align: end;
+    margin-bottom: 1rem;
+}
+
+.listaPaginas{
+    list-style-type: none;
+}
+
+
+.paginaLi > a{
+    padding: 1.25rem 0;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: .7rem;
+    border-bottom: 1px solid transparent;
+}
+
+.paginaLi > a:hover{
+    border-bottom: 1px solid black;
+}
+
+.actionContainer{
+    font-weight: 500;
+    margin: .5rem 0 1.5rem;
+}
+
+.cadastroBotao{
+    border: none;
+    border-radius: 1rem;
+    display: inline-block;
+    width: 5.625rem;
+    height: 3rem;
+    background-image: linear-gradient(to left top, #e2e5e5, #F6EBDC );
+    margin-right: .5rem;
+}
+
+
+.cadastroBotao > a{
+    color: rgb(24, 1, 1);
+    text-decoration: none;
+}
+
+.loginBotao{
+    border: none;
+    border-radius: 1rem;
+    display: inline-block;
+    width: 5.625rem;
+    height: 3rem;
+    background-color: black;
+}
+
+.loginBotao > a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/* Banner */
+
+.heroBanner{
+    background: url(../imagens/imgBanner.png) no-repeat;
+    background-size: cover;
+    padding: 3rem;
+    text-align: center;
+    font-weight: 700;
+
+    .imgPlacaSolar{
+        display: none;
+    }
+
+    .imgFundoColorido{
+        display: none;
+    }
+}
+
+.tituloBanner{
+    font-size: 2.5rem;
+}
+
+.sloganName{
+    text-transform: capitalize;
+    color: #67681C ;
+}
+
+.sloganDescricao{
+    font-weight: 400;
+    font-size: .8rem;
+    margin-top: 1rem;
+}
+
+.descricao{
+    color: var(--p-color);
+}
