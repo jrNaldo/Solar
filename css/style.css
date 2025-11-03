@@ -84,6 +84,7 @@ body{
     font-weight: 600;
     font-size: .7rem;
     border-bottom: 1px solid transparent;
+    transition: all 1s ease;
 }
 
 .paginaLi > a:hover{
@@ -92,7 +93,7 @@ body{
 
 .actionContainer{
     font-weight: 500;
-    margin: .5rem 0 1.5rem;
+    margin: 1rem 0 1.5rem;
 }
 
 .cadastroBotao{
@@ -194,13 +195,15 @@ body{
     padding: .5rem 0;
     border: 1px solid transparent;
     border-radius: .75rem;
+    transition: all .5s ease-in;
+    cursor: pointer;
 }
 
 .btn:hover{
     border: 1px solid var(--btn-color);
+    transition: all .5s ease-in;
     background-color: white;
     color: var(--btn-color);
-    transition: all .5s ease-in;
 }
 
 .btnSobreNos{
@@ -209,4 +212,26 @@ body{
 
 .sobreNosImagem{
     display: none;
+}
+
+/* Wrapper produtos */
+
+.produtosContainer{
+    background-image: url(../imagens/imgProdutos.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    margin:  0 0 1rem 0 ;
+}
+
+.tituloProdutos{
+    margin: 1rem 0;
+    font-family: var(--font-produtos);
+}
+
+.subtitulo{
+    margin: 1.5rem 0;
 }
